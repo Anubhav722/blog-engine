@@ -25,7 +25,7 @@ SECRET_KEY = '=n(r1z2wltg-mws!zn1s5u!(swkynmcom1j=w-%8$qetn0*g0('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['github-projects-anubhavsingh.c9users.io']
 
 
 # Application definition
