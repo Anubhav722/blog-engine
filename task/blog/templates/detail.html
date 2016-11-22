@@ -1,0 +1,22 @@
+<h1>Detail page</h1>
+
+{{ instance.title }}</br>
+{{ instance.content }}</br>
+
+
+
+{% for y in object_list %}
+{% if y.descripton %}
+{{ y.descripton }}
+{% endif %}
+{% if y.image %}
+<img src='{{ y.image.url }}' class='img-responsive' /></br>
+{% endif %}
+{% if y.video %}
+<<video width="320" height="240" controls>
+  <source src="{{ y.video.url }}" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+{% endif %}
+{% endfor %}
