@@ -1,0 +1,6 @@
+<h1>{{ text }}</h1>
+
+{% for x in objects %}
+    <a href='/blog/{{ x.id }}/'>{{ x.title }}</a></br>
+    
+{% endfor %}
